@@ -30,7 +30,7 @@
 
 ## 🧐 About <a name = "about"></a>
 
-Write about 1-2 paragraphs describing the purpose of your project.
+The overarching goal of this laboratory is to delve into the realm of Shared Memory and OpenMP, shedding light on key concepts and techniques. The focus lies on harnessing compiler directives to engender concurrency, enabling the efficient utilization of modern multi-core architectures. Through the adept utilization of #pragmas (directives) and their associated clauses, this endeavor aims to unlock the potential of parallelism within threads. By unraveling the intricacies of thread-level parallelism, this laboratory strives to provide a comprehensive understanding of how to leverage these tools effectively, paving the way for optimized and responsive computational workflows.
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
