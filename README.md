@@ -47,64 +47,93 @@ By adhering to these instructions, you will be poised to harness the power of Op
 
 ### Prerequisites
 
-What things you need to install the software and how to install them.
+Probably you have tu usea a VirtualMachine. You can download whaterver you want. We use VirtualBox. 
 
-```
-Give examples
-```
+**For Unix-based Systems (Linux and macOS):**
+
+1. **Check if OpenMP is installed:** On many Unix systems, OpenMP is already available as part of the standard development tools. You can check if it's installed by running the following command in the terminal:
+
+   ```
+   gcc --version
+   ```
+
+   If OpenMP is installed, you should see output that includes the `-fopenmp` option.
+
+2. **Install GCC with OpenMP support:** If OpenMP is not installed or you want to ensure you have the latest version, you can install GCC (GNU Compiler Collection) with OpenMP support. On Debian/Ubuntu-based systems, you can use the following command:
+
+   ```
+   sudo apt-get install g++
+   ```
+
+   On Red Hat/Fedora-based systems, you can use:
+
+   ```
+   sudo yum install gcc-c++
+   ```
+
+3. **Compile with OpenMP:** Once you have GCC with OpenMP support installed, you can compile programs with OpenMP by including the `-fopenmp` option, as shown in the compilation instructions you provided earlier.
+
 
 ### Installing
+Installation process of VirtualBox.
 
-A step by step series of examples that tell you how to get a development env running.
+**Downloading and Setting Up VirtualBox:**
 
-Say what the step will be
+1. **Download VirtualBox:**
+   Visit the official VirtualBox website at https://www.virtualbox.org/ and navigate to the "Downloads" section. Choose the appropriate version for your operating system (Windows, macOS, or Linux) and download the installer.
 
-```
-Give the example
-```
+2. **Install VirtualBox:**
+   Run the downloaded installer and follow the on-screen instructions to install VirtualBox on your computer.
 
-And repeat
+**Importing and Using an Ubuntu .ova File:**
 
-```
-until finished
-```
+1. **Download Ubuntu .ova File:**
+   Find a trusted source where you can download an Ubuntu .ova file. The .ova file is a virtual machine image that you'll import into VirtualBox. You can download Ubuntu .ova files from the official Ubuntu website or other reputable sources.
 
-End with an example of getting some data out of the system or using it for a little demo.
+2. **Open VirtualBox:**
+   Launch VirtualBox from your computer's applications menu.
 
-## 🔧 Running the tests <a name = "tests"></a>
+3. **Import Appliance:**
+   In the VirtualBox interface, go to the "File" menu and select "Import Appliance." Click the folder icon and browse to the location where you downloaded the Ubuntu .ova file.
 
-Explain how to run the automated tests for this system.
+4. **Import Settings:**
+   Select the .ova file and click "Open." VirtualBox will display details about the virtual machine. Review the settings and configurations. You can adjust parameters like the amount of RAM allocated and the number of CPU cores.
 
-### Break down into end to end tests
+5. **Import Virtual Machine:**
+   Click "Import" to start the process of importing the Ubuntu virtual machine. This may take a few minutes.
 
-Explain what these tests test and why
+6. **Start the Virtual Machine:**
+   Once the import is complete, select the imported virtual machine from the VirtualBox Manager. Click the "Start" button to launch the virtual machine.
 
-```
-Give an example
-```
+7. **Install Ubuntu:**
+   The virtual machine will boot up, and you'll see the Ubuntu installation process. Follow the on-screen instructions to install Ubuntu within the virtual machine.
 
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
+8. **Using Ubuntu:**
+   After the installation is complete, you can log in to the Ubuntu virtual machine and start using it just like you would on a physical computer.
 
 ## 🎈 Usage <a name="usage"></a>
 
-Add notes about how to use the system.
+For others exercise, use the following comands:
+```
+riemann.c
+gcc -o riemann riemann.c
+```
+Using threads: 
+```
+gcc -o riemann2 riemann2.c
+./riemann2 a b threadsD
+```
+
 
 ## 🚀 Deployment <a name = "deployment"></a>
 
-Add additional notes about how to deploy this on a live system.
+Note: repeat the same comands for the next excercises that you need to compile.
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
+- [VirtualBox]( https://www.virtualbox.org/) - VirtualMachine
+- [Ubuntu]( https://ubuntu.com/download/desktop) - .ova Desktop
+
 
 ## ✍️ Authors <a name = "authors"></a>
 - Pablo Escobar - 2010936
@@ -113,6 +142,4 @@ Add additional notes about how to deploy this on a live system.
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
+- CODE GRANTED BY THE LEADING PROFESSOR IN: https://github.com/esc20936/lab1_paralela
