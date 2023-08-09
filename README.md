@@ -34,7 +34,16 @@ The overarching goal of this laboratory is to delve into the realm of Shared Mem
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+To effectively utilize OpenMP, it is imperative to begin by including the header <omp.h> in your code. When compiling with g++ / gcc, follow this syntax:
+```
+$gcc hello.cpp −fopenmp −o hello −lstdc++
+$g++ hello.cpp −fopenmp −o hello
+```
+For execution, invoke the compiled executable based on your platform. Pass the desired number of threads as an argument, as demonstrated below:
+```
+$./hello 4
+```
+By adhering to these instructions, you will be poised to harness the power of OpenMP and control thread-level parallelism for enhanced computational performance.
 
 ### Prerequisites
 
@@ -98,10 +107,9 @@ Add additional notes about how to deploy this on a live system.
 - [NodeJs](https://nodejs.org/en/) - Server Environment
 
 ## ✍️ Authors <a name = "authors"></a>
-
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
-
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
+- Pablo Escobar - 2010936
+- Angel Higueros - 20460
+- Mariana David - 201055
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
